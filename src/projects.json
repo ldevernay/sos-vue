@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Maraichage",
+    "link": "JGuiraud/projet_siteMaraichage",
+    "icon": "fa-shopping-basket",
+    "tags": ["vegetables", "local markets"],
+    "demo": "http://lesjardinsderiton.herokuapp.com"
+  },
+  {
+    "name": "Carte Office de tourisme",
+    "link": "ddiez31/Office-Tourisme",
+    "icon": "fa-map-marker",
+    "tags": ["tourism", "photo", "interactive map"],
+    "demo": "https://ldevernay.github.io/Office-Tourisme/"
+  },
+  {
+    "name": "Serious game SVE",
+    "link": "JGuiraud/SeriousGame-FRMJC",
+    "icon": "fa-compass",
+    "tags": ["serious game", "SVE", "game"],
+    "demo": "http://instinctive-road.surge.sh//"
+  }
+]
