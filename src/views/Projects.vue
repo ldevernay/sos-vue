@@ -1,5 +1,8 @@
 <template>
-	<project-list :projects_list="{projects}"></project-list>
+	<section>
+		<h1>Simplon Open-Source</h1>
+		<project-list :projects_list="{projects}"></project-list>
+	</section>
 </template>
 
 <script>
