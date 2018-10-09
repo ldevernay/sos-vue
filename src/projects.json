@@ -1,5 +1,6 @@
 [
   {
+    "id": "maraichage",
     "name": "Maraichage",
     "link": "JGuiraud/projet_siteMaraichage",
     "icon": "fa-shopping-basket",
@@ -7,6 +8,7 @@
     "demo": "http://lesjardinsderiton.herokuapp.com"
   },
   {
+    "id": "carte-ot",
     "name": "Carte Office de tourisme",
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
@@ -14,6 +16,7 @@
     "demo": "https://ldevernay.github.io/Office-Tourisme/"
   },
   {
+    "id": "sve",
     "name": "Serious game SVE",
     "link": "JGuiraud/SeriousGame-FRMJC",
     "icon": "fa-compass",

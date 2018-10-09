@@ -6,7 +6,7 @@
 					<v-card-title primary-title>
 						<h3 class="headless">
 							<v-icon class="white--text">fas {{ project.icon }}</v-icon>
-							{{ project.name }}
+							<div @click="linkToProject(project.id)">{{ project.name }}</div>
 						</h3>
 					</v-card-title>
 					<v-card-actions>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+	import router from "../router";
 	export default {
 		props: {
 			projects_list: Object
@@ -37,6 +38,11 @@
 		data(){
 			return {
 				projects: this.projects_list.projects
+			}
+		},
+		methods: {
+			linkToProject(id){
+				router.push({name: "project", params: {project_id: id}});
 			}
 		}
 	}
