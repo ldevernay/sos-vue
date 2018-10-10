@@ -11,38 +11,40 @@
 			<div>Languages : {{this.github_data.languages}}</div>
 			<div>Forks : {{this.github_data.forks_count}}</div>
 			<div>Issues : {{this.github_data.open_issues_count}}</div>
-			<div>License : {{this.github_data.license}}</div>
+			<div>License : {{this.github_data.license.name}}</div>
 			<router-link to="/" class="link">Retour à la liste</router-link>
 		</section>
 	</template>
 
 	<script>
-		import projects from '@/projects.json'
+import projects from "@/projects.json";
 
-		export default {
-			components: {},
-			data(){
-				return {
-					project: {},
-					projects: projects,
-					github_data: {}
-				}
-			},
-			created() {
-				// Filtering projects from projects.json to get clicked project
-				this.project = this.projects.filter(val => val.id == this.$route.params.project_id)[0];
-				// Fetching data from github API for current project
-				fetch(`https://api.github.com/repos/${this.project.link}`, {
-				method: 'GET'
-				})
-				.then(response => response.json())
-				.then(json => (this.github_data = json));
-				// Fetching contributors data from github API for current project
-				// fetch(`https://api.github.com/repos/${this.project.link}/contributors`, {
-				// method: 'GET'
-				// })
-				// .then(response => response.json())
-				// .then(json => (this.contributors_data = json));
-			}
-		}
-	</script>
+export default {
+  components: {},
+  data() {
+    return {
+      project: {},
+      projects: projects,
+      github_data: {}
+    };
+  },
+  created() {
+    // Filtering projects from projects.json to get clicked project
+    this.project = this.projects.filter(
+      val => val.id === this.$route.params.project_id
+    )[0];
+    // Fetching data from github API for current project
+    fetch(`https://api.github.com/repos/${this.project.link}`, {
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(json => (this.github_data = json));
+    // Fetching contributors data from github API for current project
+    // fetch(`https://api.github.com/repos/${this.project.link}/contributors`, {
+    // method: 'GET'
+    // })
+    // .then(response => response.json())
+    // .then(json => (this.contributors_data = json));
+  }
+};
+</script>

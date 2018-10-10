@@ -30,20 +30,20 @@
 </template>
 
 <script>
-	import router from "../router";
-	export default {
-		props: {
-			projects_list: Object
-		},
-		data(){
-			return {
-				projects: this.projects_list.projects
-			}
-		},
-		methods: {
-			linkToProject(id){
-				router.push({name: "project", params: {project_id: id}});
-			}
-		}
-	}
+import router from "../router";
+export default {
+  props: {
+    projects_list: Object
+  },
+  data() {
+    return {
+      projects: this.projects_list.projects
+    };
+  },
+  methods: {
+    linkToProject(id) {
+      router.push({ name: "project", params: { project_id: id } });
+    }
+  }
+};
 </script>
