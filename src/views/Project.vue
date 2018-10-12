@@ -1,17 +1,17 @@
 	<template>
 		<section>
 			<h1>Simplon Open-Source</h1>
-			<h2>{{this.project.name}}</h2>
-			<div>Tags : {{this.project.tags}}</div>
-			<div>Online demo : {{this.project.demo}}</div>
-			<div>URL : {{this.github_data.html_url}}</div>
-			<div>Description : {{this.github_data.description}}</div>
-			<div>Stars : {{this.github_data.stargazers_count}}</div>
-			<div>Watch : {{this.github_data.watchers_count}}</div>
-			<div>Languages : {{this.github_data.languages}}</div>
-			<div>Forks : {{this.github_data.forks_count}}</div>
-			<div>Issues : {{this.github_data.open_issues_count}}</div>
-			<div>License : {{this.github_data.license.name}}</div>
+			<h2>{{project.name}}</h2>
+			<div>Tags : {{project.tags}}</div>
+			<div>Online demo : {{project.demo}}</div>
+			<div>URL : {{github_data.html_url}}</div>
+			<div>Description : {{github_data.description}}</div>
+			<div>Stars : {{github_data.stargazers_count}}</div>
+			<div>Watch : {{github_data.watchers_count}}</div>
+			<div>Languages : {{github_data.languages}}</div>
+			<div>Forks : {{github_data.forks_count}}</div>
+			<div>Issues : {{github_data.open_issues_count}}</div>
+			<div>License : {{github_data.license ? github_data.liscence.name : "none"}}</div>
 			<router-link to="/" class="link">Retour à la liste</router-link>
 		</section>
 	</template>
