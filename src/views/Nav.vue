@@ -24,9 +24,7 @@
   export default {
   name: "Nav",
   data() {
-    retur<!--
-
- -->n {
+    return {
       searchStatus: false,
       search: null
     };
