@@ -18,10 +18,12 @@
 </template>
 
 <script>
-  /**
-   * @TODO: Create or install search engine ('elasticsearch'??)
-   */
-  export default {
+/**
+ * @TODO: Create or install search engine ('elasticsearch'??)
+ * @TODO: Hide input if user not focus input
+ * @TODO: Autofocus input
+ */
+export default {
   name: "Nav",
   data() {
     return {
