@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<h1>Simplon Open-Source</h1>
+    <Nav></Nav>
 		<project-list :projects_list="{projects}"></project-list>
 	</section>
 </template>
@@ -8,10 +8,12 @@
 <script>
 	import ProjectList from '@/components/ProjectList'
 	import projects from '@/projects.json'
+  import Nav from "./Nav"
 
 	export default {
 		components: {
-			ProjectList
+			ProjectList,
+      Nav
 		},
 		data(){
 			return {
