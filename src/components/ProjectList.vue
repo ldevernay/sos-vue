@@ -38,6 +38,7 @@
 
 <script>
 import router from "../router";
+
 export default {
   props: {
     projects_list: Object

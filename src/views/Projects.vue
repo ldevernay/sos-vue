@@ -6,19 +6,19 @@
 </template>
 
 <script>
-	import ProjectList from '@/components/ProjectList'
-	import projects from '@/projects.json'
-  import Nav from "./Nav"
+import ProjectList from "@/components/ProjectList";
+import projects from "@/projects.json";
+import Nav from "./Nav";
 
-	export default {
-		components: {
-			ProjectList,
-      Nav
-		},
-		data(){
-			return {
-				projects: projects
-			}
-		},
-	}
+export default {
+  components: {
+    ProjectList,
+    Nav
+  },
+  data() {
+    return {
+      projects: projects
+    };
+  }
+};
 </script>
