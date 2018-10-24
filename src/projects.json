@@ -24,6 +24,14 @@
     "demo": "http://instinctive-road.surge.sh//"
   },
   {
+    "id": "ci",
+    "name": "Cyber Identity",
+    "link": "Poltergeistz/cyber-identity",
+    "icon": "fa-user-secret",
+    "tags": ["serious game", "cyber", "personal data"],
+    "demo": "https://#"
+  },
+  {
     "id": "fpc",
     "name": "Flappy-con",   "link": "Groutch/Flappy-con",
     "icon": "fa-dove",
