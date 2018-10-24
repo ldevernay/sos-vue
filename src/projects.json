@@ -14,13 +14,5 @@
     "icon": "fa-map-marker",
     "tags": ["tourism", "photo", "interactive map"],
     "demo": "https://ldevernay.github.io/Office-Tourisme/"
-  },
-  {
-    "id": "sve",
-    "name": "Serious game SVE",
-    "link": "JGuiraud/SeriousGame-FRMJC",
-    "icon": "fa-compass",
-    "tags": ["serious game", "SVE", "game"],
-    "demo": "http://instinctive-road.surge.sh//"
   }
 ]
