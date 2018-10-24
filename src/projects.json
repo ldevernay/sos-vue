@@ -22,5 +22,13 @@
     "icon": "fa-compass",
     "tags": ["serious game", "SVE", "game"],
     "demo": "http://instinctive-road.surge.sh//"
+  },
+  {
+    "id": "ci",
+    "name": "Cyber Identity",
+    "link": "Poltergeistz/cyber-identity",
+    "icon": "fa-user-secret",
+    "tags": ["serious game", "cyber", "personal data"],
+    "demo": "https://#"
   }
 ]
