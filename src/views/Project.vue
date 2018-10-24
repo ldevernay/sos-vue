@@ -11,7 +11,7 @@
 			<div>Languages : {{github_data.language}}</div>
 			<div>Forks : {{github_data.forks_count}}</div>
 			<div>Issues : {{github_data.open_issues_count}}</div>
-			<div>License : {{github_data.license ? github_data.liscence.name : "none"}}</div>
+			<div>License : {{github_data.license ? github_data.license.name : "none"}}</div>
         <div>Contributeurs : {{contributors_data ? contributors_data.length : "none" }} </div>
         <v-container grid-list-md v-if="contributors_data">
           <v-layout row wrap>
