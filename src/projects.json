@@ -24,6 +24,13 @@
     "demo": "http://instinctive-road.surge.sh//"
   },
   {
+    "id": "fpc",
+    "name": "Flappy-con",   "link": "Groutch/Flappy-con",
+    "icon": "fa-dove",
+    "tags": ["Flappy bird", "Joy-con", "game", "phaser"],
+    "demo": "https://groutch.github.io/Flappy-con/"
+  },
+  {
     "id": "nbr",
     "name": "Mystery number class",
     "link": "Alencruser/Numberclass",
@@ -31,4 +38,5 @@
     "tags": ["Mystery","Number","Class","Javascript"],
     "demo": "https://media3.giphy.com/media/3np5heMP0qnRqyb7Cp/giphy.gif"
   }
+
 ]
