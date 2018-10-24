@@ -22,5 +22,14 @@
     "icon": "fa-compass",
     "tags": ["serious game", "SVE", "game"],
     "demo": "http://instinctive-road.surge.sh//"
+  },
+  {
+    "id": "fpc",
+    "name": "Flappy-con",
+    "link": "Groutch/Flappy-con",
+    "icon": "fa-dove",
+    "tags": ["Flappy bird", "Joy-con", "game", "phaser"],
+    "demo": "https://groutch.github.io/Flappy-con/"
   }
+
 ]
