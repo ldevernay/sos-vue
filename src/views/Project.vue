@@ -8,7 +8,7 @@
 			<div>Description : {{github_data.description}}</div>
 			<div>Stars : {{github_data.stargazers_count}}</div>
 			<div>Watch : {{github_data.watchers_count}}</div>
-			<div>Languages : {{github_data.languages}}</div>
+			<div>Languages : {{github_data.language}}</div>
 			<div>Forks : {{github_data.forks_count}}</div>
 			<div>Issues : {{github_data.open_issues_count}}</div>
 			<div>License : {{github_data.license ? github_data.liscence.name : "none"}}</div>
