@@ -37,6 +37,14 @@
     "icon": "fa-accessible-icon",
     "tags": ["Mystery","Number","Class","Javascript"],
     "demo": "https://media3.giphy.com/media/3np5heMP0qnRqyb7Cp/giphy.gif"
+  },
+  {
+    "id": "itt",
+    "name": "Calculer l'ITT",
+    "link": "SDarmandieu/ITTpwa",
+    "icon": "fa-briefcase-medical",
+    "tags": ["Medicine","ITT"],
+    "demo": "https://ittpwa.herokuapp.com/"
   }
 
 ]
