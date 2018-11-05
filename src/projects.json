@@ -39,6 +39,13 @@
     "demo": "https://media3.giphy.com/media/3np5heMP0qnRqyb7Cp/giphy.gif"
   },
   {
+    "id": "ppg",
+    "name": "Projet_pedago_5c",
+    "link": "marion1998/projet_pedago_5c",
+    "icon": "fa-users",
+    "tags": ["Game", "Children", "Learning", "Javascript", "JQuery "]
+  },
+  {
     "id": "itt",
     "name": "Calculer l'ITT",
     "link": "SDarmandieu/ITTpwa",
@@ -46,5 +53,4 @@
     "tags": ["Medicine","ITT"],
     "demo": "https://ittpwa.herokuapp.com/"
   }
-
 ]
