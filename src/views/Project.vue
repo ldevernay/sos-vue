@@ -15,7 +15,7 @@
         <div>Contributeurs : {{contributors_data ? contributors_data.length : "none" }} </div>
         <v-container grid-list-md v-if="contributors_data">
           <v-layout row wrap>
-            <div v-for="contributor in contributors_data">
+            <div v-for="(contributor, index) in contributors_data" :key=index>
               <v-card>
                 <v-card-title>
                   <v-flex xs3>
@@ -27,7 +27,6 @@
             </div>
           </v-layout>
         </v-container>
-      </div>
 			<router-link to="/" class="link">Retour à la liste</router-link>
 		</section>
 	</template>

@@ -28,7 +28,7 @@
     "vue-cli-plugin-vuetify": "^0.2.1",
     "vue-template-compiler": "^2.5.17"
   },
-  "git":{
+  "git": {
     "scripts": {
       "commit-msg": "npm run build",
       "pre-push": "surge --project ./dist --domain simplonopensource.surge.sh"
