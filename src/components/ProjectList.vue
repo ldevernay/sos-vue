@@ -5,10 +5,10 @@
         <v-card color="grey lighten-3">
           <v-card-title>
             <v-layout row>
-              <v-flex xs3>
-                <v-img height="200" width="200" src="https://via.placeholder.com/350x350"/>
+              <v-flex xs1>
+                <v-icon x-large>{{project.icon}}</v-icon>
               </v-flex>
-              <v-flex xs9 class="text-xs-right">
+              <v-flex xs11 class="text-xs-right">
                 <h3>{{ project.name }}</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur facilis fuga iusto laudantium, modi, nihil omnis perspiciatis placeat quasi quia rerum soluta. Alias dolore eaque molestiae quo tempora voluptas.</p>
                 <v-btn flat @click="linkToProject(project.id)">Show more</v-btn>
