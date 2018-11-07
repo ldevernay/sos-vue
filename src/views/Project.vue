@@ -5,18 +5,50 @@
         <v-spacer></v-spacer>
         <v-btn flat @click="linkToHome()" color="#FFFFFF">Home</v-btn>
       </v-toolbar>
-			<h2>{{project.name}}</h2>
-			<div>Tags : {{project.tags}}</div>
-			<div>Online demo : {{project.demo}}</div>
-			<div>URL : {{github_data.html_url}}</div>
-			<div>Description : {{github_data.description}}</div>
-			<div>Stars : {{github_data.stargazers_count}}</div>
-			<div>Watch : {{github_data.watchers_count}}</div>
-			<div>Languages : {{github_data.language}}</div>
-			<div>Forks : {{github_data.forks_count}}</div>
-			<div>Issues : {{github_data.open_issues_count}}</div>
-			<div>License : {{github_data.license ? github_data.license.name : "none"}}</div>
-        <div>Contributeurs : {{contributors_data ? contributors_data.length : "none" }} </div>
+      <v-layout>
+
+
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card>
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">{{project.name}}</h3>
+          </div>
+        </v-card-title>
+         <v-divider darken></v-divider>
+									<v-card-text>
+										<div>Tags : {{project.tags}}</div>
+										<div>Description : {{github_data.description}}</div>
+										<div>Stars : {{github_data.stargazers_count}}</div>
+										<div>Watch : {{github_data.watchers_count}}</div>
+										<div>Languages : {{github_data.language}}</div>
+										<div>Forks : {{github_data.forks_count}}</div>
+										<div>Issues : {{github_data.open_issues_count}}</div>
+										<div>License : {{github_data.license ? github_data.license.name : "none"}}</div>
+									</v-card-text>
+         <v-divider darken></v-divider>
+								<v-card-actions>
+            <section :key="tag" v-for="tag in project.tags">
+              <v-chip>{{ tag }}</v-chip>
+            </section>
+            <v-spacer>
+              </v-spacer>
+            <v-btn-toggle>
+              <v-btn :href="project.demo">
+                <v-icon>fas fa-globe</v-icon>
+              </v-btn>
+              <v-btn :href="`https://gihtub.com/${project.link}`">
+                <v-icon>fab fa-github</v-icon>
+              </v-btn>
+            </v-btn-toggle>
+          </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-layout>
+
+
+		
+        <h2>Contributeurs {{contributors_data ? "" : " : none" }} </h2>
         <v-container grid-list-md v-if="contributors_data">
           <v-layout row wrap>
             <div v-for="(contributor, index) in contributors_data" :key=index>
