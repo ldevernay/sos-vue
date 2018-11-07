@@ -1,6 +1,10 @@
 	<template>
 		<section>
-			<h1>Simplon Open-Source</h1>
+      <v-toolbar color="#EC0747">
+        <v-toolbar-title class="white--text">Simplon Open Source</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn flat @click="linkToHome()" color="#FFFFFF">Home</v-btn>
+      </v-toolbar>
 			<h2>{{project.name}}</h2>
 			<div>Tags : {{project.tags}}</div>
 			<div>Online demo : {{project.demo}}</div>
@@ -32,7 +36,9 @@
 	</template>
 
 	<script>
+import router from "../router";
 import projects from "@/projects.json";
+import Nav from "./Nav";
 
 export default {
   components: {},
@@ -43,6 +49,11 @@ export default {
       github_data: {},
       contributors_data: {}
     };
+  },
+  methods: {
+    linkToHome() {
+      router.push({ name: "projects" });
+    }
   },
   created() {
     // Filtering projects from projects.json to get clicked project
