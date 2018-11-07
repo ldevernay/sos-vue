@@ -1,6 +1,6 @@
 <template>
-  <v-toolbar>
-    <v-toolbar-title>Simplon Open Source</v-toolbar-title>
+  <v-toolbar color="#EC0747">
+    <v-toolbar-title class="white--text">Simplon Open Source</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-text-field
@@ -11,7 +11,7 @@
         autofocus
       ></v-text-field>
       <v-btn icon @click="toggleSearchBar">
-        <v-icon :class="searchStatus ? 'primary--text' : 'blue-grey--text lighten-1'">fas fa-search</v-icon>
+        <v-icon :class="searchStatus ? 'primary--text' : 'white--text lighten-1'">fas fa-search</v-icon>
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
@@ -40,6 +40,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>
