@@ -16,11 +16,11 @@
         <v-container grid-list-md v-if="contributors_data">
           <v-layout row wrap>
             <div v-for="(contributor, index) in contributors_data" :key=index>
-              <v-card>
+              <v-card :href="`https://github.com/${contributor.login}`">
                 <v-card-title>
                   <v-flex xs3>
                     <h3>{{contributor.login}}</h3>
-                    <v-img height="200" width="200" :src="contributor.avatar_url"/>
+                    <v-img height="200" width="200" :src="contributor.avatar_url" class="contributor_img" />
                   </v-flex>
                 </v-card-title>
               </v-card>
@@ -64,3 +64,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.contributor_img {
+  border-radius: 50%;
+}
+</style>
