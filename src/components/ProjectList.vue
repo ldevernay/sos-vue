@@ -1,7 +1,7 @@
 <template>
 	<v-container grid-list-md>
 		<v-layout row wrap >
-			<v-flex :key="project.id" xs6 v-for="project in projects">
+			<v-flex :key="project.id" v-for="project in projects">
         <v-card color="grey lighten-3">
           <v-card-title>
             <v-layout row>
@@ -11,8 +11,8 @@
               <v-flex xs11 class="text-xs-right">
                 <h3>{{ project.name }}</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur facilis fuga iusto laudantium, modi, nihil omnis perspiciatis placeat quasi quia rerum soluta. Alias dolore eaque molestiae quo tempora voluptas.</p>
-                <v-btn flat @click="linkToProject(project.id)">Show more</v-btn>
               </v-flex>
+              <v-btn flat @click="linkToProject(project.id)">Show more</v-btn>
             </v-layout>
           </v-card-title>
           <v-divider darken></v-divider>
@@ -20,7 +20,8 @@
             <section :key="tag" v-for="tag in project.tags">
               <v-chip>{{ tag }}</v-chip>
             </section>
-            <v-spacer></v-spacer>
+            <v-spacer>
+              </v-spacer>
             <v-btn-toggle>
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>
@@ -31,6 +32,7 @@
             </v-btn-toggle>
           </v-card-actions>
         </v-card>
+        <hr/>
 			</v-flex>
 		</v-layout>
 	</v-container>
