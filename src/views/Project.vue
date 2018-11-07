@@ -17,7 +17,6 @@
         </v-card-title>
          <v-divider darken></v-divider>
 									<v-card-text>
-										<div>Tags : {{project.tags}}</div>
 										<div>Description : {{github_data.description}}</div>
 										<div>Stars : {{github_data.stargazers_count}}</div>
 										<div>Watch : {{github_data.watchers_count}}</div>
