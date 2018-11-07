@@ -17,13 +17,13 @@
         </v-card-title>
          <v-divider darken></v-divider>
 									<v-card-text>
-										<div>Description : {{github_data.description}}</div>
-										<div>Stars : {{github_data.stargazers_count}}</div>
-										<div>Watch : {{github_data.watchers_count}}</div>
-										<div>Languages : {{github_data.language}}</div>
-										<div>Forks : {{github_data.forks_count}}</div>
-										<div>Issues : {{github_data.open_issues_count}}</div>
+										<dfn>{{github_data.description}}</dfn>
+										<div>Stars <span class="counter">{{github_data.stargazers_count}}</span></div>
+										<div>Watch <span class="counter">{{github_data.watchers_count}}</span></div>
+										<div>Forks <span class="counter">{{github_data.forks_count}}</span></div>
+										<div>Issues <span class="counter">{{github_data.open_issues_count}}</span></div>
 										<div>License : {{github_data.license ? github_data.license.name : "none"}}</div>
+										<div><v-chip>{{github_data.language}}</v-chip></div>
 									</v-card-text>
          <v-divider darken></v-divider>
 								<v-card-actions>
@@ -110,5 +110,17 @@ export default {
 <style scoped>
 .contributor_img {
   border-radius: 50%;
+}
+.counter {
+
+    background-color: rgba(27,31,35,.08);
+    border-radius: 20px;
+    color: #586069;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+
 }
 </style>
