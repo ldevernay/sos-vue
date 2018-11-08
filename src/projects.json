@@ -43,7 +43,8 @@
     "name": "Projet_pedago_5c",
     "link": "marion1998/projet_pedago_5c",
     "icon": "fa-users",
-    "tags": ["Game", "Children", "Learning", "Javascript", "JQuery "]
+    "tags": ["Game", "Children", "Learning", "Javascript", "JQuery "],
+    "demo": "https://manger-bouger-5c.herokuapp.com/"
   },
   {
     "id": "itt",
