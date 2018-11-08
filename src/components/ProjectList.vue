@@ -10,7 +10,7 @@
               </v-flex>
               <v-flex xs11 class="text-xs-right">
                 <h3>{{ project.name }}</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur facilis fuga iusto laudantium, modi, nihil omnis perspiciatis placeat quasi quia rerum soluta. Alias dolore eaque molestiae quo tempora voluptas.</p>
+                <p>{{ project.description }}</p>
               </v-flex>
               <v-btn flat @click="linkToProject(project.id)">Show more</v-btn>
             </v-layout>
