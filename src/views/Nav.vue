@@ -1,6 +1,6 @@
 <template>
   <v-toolbar color="#EC0747">
-    <v-toolbar-title class="white--text">Simplon Open Source</v-toolbar-title>
+    <v-btn flat @click="linkToHome()" color="#FFFFFF">Simplon Open Source</v-btn>
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-text-field
@@ -36,7 +36,10 @@ export default {
       return !this.searchStatus
         ? (this.searchStatus = true)
         : (this.searchStatus = false);
-    }
+    },
+    linkToHome() {
+          router.push({ name: "projects" });
+        }
   }
 };
 </script>

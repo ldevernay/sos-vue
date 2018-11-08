@@ -1,9 +1,8 @@
       <template>
         <section>
           <v-toolbar color="#EC0747">
-            <v-toolbar-title class="white--text">Simplon Open Source</v-toolbar-title>
+            <v-btn flat @click="linkToHome()" color="#FFFFFF">Simplon Open Source</v-btn>
             <v-spacer></v-spacer>
-            <v-btn flat @click="linkToHome()" color="#FFFFFF">Home</v-btn>
           </v-toolbar>
           <v-layout>
         <v-flex xs12 sm6 offset-sm3>
