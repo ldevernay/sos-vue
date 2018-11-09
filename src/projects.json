@@ -1,5 +1,14 @@
 [
   {
+    "id": "roguopoly",
+    "name": "Roguopoly",
+    "description": "RoguoPoly is a multiplayer online board game, or the goal is to have the most homestead possible on the board and have the most money to win.",
+    "link": "AllanCerveaux/Roguopoly",
+    "icon": "fa-gamepad",
+    "tags": ["tabletop game", "game", "monopoly", "rogue-like"],
+    "demo": "https://github.com/AllanCerveaux/Roguopoly"
+  },
+  {
     "id": "maraichage",
     "name": "Maraichage",
     "description": "A website for vegetables producer",
