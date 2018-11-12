@@ -1,4 +1,17 @@
 <template>
+<section>
+      <v-text-field
+        hide-details
+        single-line
+        v-show="searchStatus"
+        label="Javascript, Php"
+        autofocus
+        v-model="search_input"
+        @keyup="filter_projects"
+      ></v-text-field>
+      <v-btn icon @click="toggleSearchBar">
+        <v-icon :class="searchStatus ? 'primary--text' : 'dark--text lighten-1'">fas fa-search</v-icon>
+      </v-btn>
 	<v-container grid-list-md>
 		<v-layout row wrap >
 			<v-flex :key="project.id" v-for="project in projects">
@@ -36,6 +49,7 @@
 			</v-flex>
 		</v-layout>
 	</v-container>
+</section>
 </template>
 
 <script>
@@ -47,13 +61,24 @@ export default {
   },
   data() {
     return {
+      init_projects: this.projects_list.projects,
       projects: this.projects_list.projects,
-      github_data: null
+      github_data: null,
+      searchStatus: false,
+      search_input: null,
     };
   },
   methods: {
+    toggleSearchBar() {
+      return !this.searchStatus
+        ? (this.searchStatus = true)
+        : (this.searchStatus = false);
+    },
     linkToProject(id) {
       router.push({ name: "project", params: { project_id: id } });
+    },
+    filter_projects(){
+      this.projects = this.init_projects.filter(project => project.name.indexOf(this.search_input) != -1);
     }
   }
 };
