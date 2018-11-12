@@ -1,4 +1,4 @@
-# sos
+# Simplon Open Source (SOS)
 ## Presentation
 The main purpose of this project is to collect all open-source projects from Simplon (from teachers, students and others).  
 This might also be a good starting point to contribute to other projects. 
