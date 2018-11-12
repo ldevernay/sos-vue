@@ -42,7 +42,7 @@
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>
               </v-btn>
-              <v-btn :href="`https://gihtub.com/${project.link}`">
+              <v-btn :href="`https://github.com/${project.link}`">
                 <v-icon>fab fa-github</v-icon>
               </v-btn>
             </v-btn-toggle>
