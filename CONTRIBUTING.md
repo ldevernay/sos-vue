@@ -18,7 +18,7 @@ In projects.json, you will find the following values :
 * description : be concise, be appealing,
 * link : link to the github repo (github_username/repo_name),
 * icon : go find a fitting icon on [Font Awesome](https://fontawesome.com/icons)
-* tags : any relevant searchable tags. It may include languages, frameworks and libraries. Browse existing projects for inspiration.
+* tags : any relevant searchable tags. It may include languages, frameworks and libraries. Browse existing projects for inspiration. All tags should start with an uppercase letter.
 * demo : URL to an online functionning version of your project. 
 
 ## Pull Request Process

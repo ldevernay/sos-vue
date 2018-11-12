@@ -7,11 +7,14 @@
         label="Javascript, Php"
         autofocus
         v-model="search_input"
-        @keyup="filter_projects"
+        @keyup="filter_by_name"
       ></v-text-field>
       <v-btn icon @click="toggleSearchBar">
         <v-icon :class="searchStatus ? 'primary--text' : 'dark--text lighten-1'">fas fa-search</v-icon>
       </v-btn>
+      <section :key="tag" v-for="tag in selected_tags">
+              <v-chip @click="remove_filter_tag(tag)"><v-icon>fas fa-times</v-icon>  {{ tag }}</v-chip>
+            </section>
 	<v-container grid-list-md>
 		<v-layout row wrap >
 			<v-flex :key="project.id" v-for="project in projects">
@@ -31,7 +34,7 @@
           <v-divider darken></v-divider>
           <v-card-actions>
             <section :key="tag" v-for="tag in project.tags">
-              <v-chip>{{ tag }}</v-chip>
+              <v-chip @click="add_filter_tag(tag)">{{ tag }}</v-chip>
             </section>
             <v-spacer>
               </v-spacer>
@@ -66,6 +69,7 @@ export default {
       github_data: null,
       searchStatus: false,
       search_input: null,
+      selected_tags: []
     };
   },
   methods: {
@@ -77,8 +81,23 @@ export default {
     linkToProject(id) {
       router.push({ name: "project", params: { project_id: id } });
     },
-    filter_projects(){
+    filter_by_name(){
       this.projects = this.init_projects.filter(project => project.name.toUpperCase().indexOf(this.search_input.toUpperCase()) != -1);
+    },
+    add_filter_tag(tag){
+      this.selected_tags.push(tag);
+      this.filter_by_tags();
+    },
+    remove_filter_tag(tag){
+      this.selected_tags.splice(this.selected_tags.indexOf(tag), 1);
+      this.filter_by_tags();
+    },
+    filter_by_tags(){
+      this.projects = this.init_projects.filter(project => {
+        return this.selected_tags.every(
+          selected_tag => project.tags.indexOf(selected_tag) != -1
+        ) 
+      });
     }
   }
 };

@@ -5,7 +5,7 @@
     "description": "RoguoPoly is a multiplayer online board game, or the goal is to have the most homestead possible on the board and have the most money to win.",
     "link": "AllanCerveaux/Roguopoly",
     "icon": "fa-gamepad",
-    "tags": ["tabletop game", "game", "monopoly", "rogue-like"],
+    "tags": ["Tabletop game", "Game", "Monopoly", "Rogue-like"],
     "demo": "https://github.com/AllanCerveaux/Roguopoly"
   },
   {
@@ -14,7 +14,7 @@
     "description": "A website for vegetables producer",
     "link": "JGuiraud/projet_siteMaraichage",
     "icon": "fa-shopping-basket",
-    "tags": ["vegetables", "local markets"],
+    "tags": ["Vegetables", "Local markets"],
     "demo": "http://lesjardinsderiton.herokuapp.com"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Discover Saint-Gaudens",
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
-    "tags": ["tourism", "photo", "interactive map"],
+    "tags": ["Tourism", "Photo", "Interactive map"],
     "demo": "https://ldevernay.github.io/Office-Tourisme/"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Learn about your identity online",
     "link": "Poltergeistz/cyber-identity",
     "icon": "fa-user-secret",
-    "tags": ["serious game", "cyber", "personal data"],
+    "tags": ["Serious game", "Cyber", "Personal data"],
     "demo": "https://#"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Classic Flappy bird",   
     "link": "Groutch/Flappy-con",
     "icon": "fa-dove",
-    "tags": ["Flappy bird", "Joy-con", "game", "phaser"],
+    "tags": ["Flappy bird", "Joy-con", "Game", "Phaser"],
     "demo": "https://groutch.github.io/Flappy-con/"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Guess the number",
     "link": "Alencruser/Numberclass",
     "icon": "fa-sort-numeric-up",
-    "tags": ["Mystery","Number","Class","Javascript"],
+    "tags": ["Game","Class","Javascript"],
     "demo": "https://media3.giphy.com/media/3np5heMP0qnRqyb7Cp/giphy.gif"
   },
   {
