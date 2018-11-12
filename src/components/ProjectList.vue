@@ -78,7 +78,7 @@ export default {
       router.push({ name: "project", params: { project_id: id } });
     },
     filter_projects(){
-      this.projects = this.init_projects.filter(project => project.name.indexOf(this.search_input) != -1);
+      this.projects = this.init_projects.filter(project => project.name.toUpperCase().indexOf(this.search_input.toUpperCase()) != -1);
     }
   }
 };
