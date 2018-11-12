@@ -4,7 +4,8 @@ The main purpose of this project is to collect all open-source projects from Sim
 This might also be a good starting point to contribute to other projects. 
 
 ## Add your own project
-To add your own project on SOS, just add it to src/projects.json and create a pull-request.   
+To add your own project on SOS, just add it to src/projects.json and create a pull-request.  
+See CONTRIBUTING.md for more details.  
 Everyone is welcome as long as you're eager to let others contribute.   
 Be sure to have a complete readme.md on how to use your project.   
 Having some issues registered might be a good start for some contributors, as well as an informative contributing.md and a licence.   

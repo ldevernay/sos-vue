@@ -12,6 +12,14 @@ This is a good starting place for beginners.
 Please let us know if you wish to add a project to projects.json. 
 It would be best if your project had a README.md with enough instructions to get started, a CONTRIBUTING.md and a license.
 Adding an online demo and a description in projects.json are a good way to let others get a first idea of your project. 
+In projects.json, you will find the following values : 
+* id : unique one-word id of your project,
+* name,
+* description : be concise, be appealing,
+* link : link to the github repo (github_username/repo_name),
+* icon : go find a fitting icon on [Font Awesome](https://fontawesome.com/icons)
+* tags : any relevant searchable tags. It may include languages, frameworks and libraries. Browse existing projects for inspiration.
+* demo : URL to an online functionning version of your project. 
 
 ## Pull Request Process
 
