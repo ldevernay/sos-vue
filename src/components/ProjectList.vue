@@ -101,6 +101,8 @@ export default {
           selected_tag => project.tags.indexOf(selected_tag) != -1
         ) 
       });
+      this.search_input = "";
+      this.searchStatus = false;
     }
   }
 };
