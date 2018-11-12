@@ -17,7 +17,11 @@ export default {
   },
   data() {
     return {
-      projects: projects
+      projects: projects.sort((a,b)=>{
+        let name_a = a.name.toUpperCase();
+        let name_b = b.name.toUpperCase();
+        return (name_a < name_b) ? -1 : (name_a > name_b) ? 1 : 0;
+      })
     };
   }
 };
