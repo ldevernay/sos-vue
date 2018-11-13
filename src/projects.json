@@ -79,5 +79,14 @@
     "icon": "fas fa-list-ul",
     "tags": ["OpenSource"],
     "demo": "https://simplonopensource.surge.sh"
+  },
+  {
+    "id": "cocagne",
+    "name": "Plateforme Cocagne",
+    "description": "A website to help people from Cocagne connect",
+    "link": "Dilou89/cocagne_plateforme",
+    "icon": "fas fa-list-ul",
+    "tags": ["Share", "Connect", "Laravel", "Cocagne"],
+    "demo": "https://simplonopensource.surge.sh"
   }
 ]
