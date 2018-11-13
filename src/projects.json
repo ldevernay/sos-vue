@@ -45,15 +45,6 @@
     "demo": "https://groutch.github.io/Flappy-con/"
   },
   {
-    "id": "nbr",
-    "name": "Mystery number class",
-    "description": "Guess the number",
-    "link": "Alencruser/Numberclass",
-    "icon": "fa-sort-numeric-up",
-    "tags": ["Game","Class","Javascript"],
-    "demo": "https://media3.giphy.com/media/3np5heMP0qnRqyb7Cp/giphy.gif"
-  },
-  {
     "id": "ppg",
     "name": "Projet_pedago_5c",
     "description": "Planter/manger/bouger en jeux",
@@ -87,6 +78,6 @@
     "link": "Dilou89/cocagne_plateforme",
     "icon": "fas fa-list-ul",
     "tags": ["Share", "Connect", "Laravel", "Cocagne"],
-    "demo": "https://simplonopensource.surge.sh"
+    "demo": ""
   }
 ]
