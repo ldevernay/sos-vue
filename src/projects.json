@@ -79,5 +79,23 @@
     "icon": "fas fa-list-ul",
     "tags": ["Share", "Connect", "Laravel", "Cocagne"],
     "demo": ""
+  },
+  {
+    "id": "glossaire",
+    "name": "Glossaire",
+    "description": "A crowdsourced glossary of tech-related terms",
+    "link": "Djohn12/Glossaire",
+    "icon": "fas fa-atlas",
+    "tags": ["Glossary", "Javascript", "NodeJS"],
+    "demo": "https://glossaire-simplon.herokuapp.com"
+  },
+  {
+    "id": "skilltree",
+    "name": "Arbre de compétences",
+    "description": "Make your own online skill tree",
+    "link": "BlunT76/AdC",
+    "icon": "fas fa-tree",
+    "tags": ["Skill Tree", "Javascript", "NodeJS"],
+    "demo": "https://arbredescompetences.herokuapp.com/"
   }
 ]
