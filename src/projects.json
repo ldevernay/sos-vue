@@ -87,7 +87,7 @@
     "link": "Djohn12/Glossaire",
     "icon": "fas fa-atlas",
     "tags": ["Glossary", "Javascript", "NodeJS"],
-    "demo": "https://glossaire-simplon.herokuapp.com"
+    "demo": "https://simplon-glossary.herokuapp.com/"
   },
   {
     "id": "skilltree",
