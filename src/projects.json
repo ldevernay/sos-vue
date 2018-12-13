@@ -1,14 +1,5 @@
 [
   {
-    "id": "roguopoly",
-    "name": "Roguopoly",
-    "description": "RoguoPoly is a multiplayer online board game, or the goal is to have the most homestead possible on the board and have the most money to win.",
-    "link": "AllanCerveaux/Roguopoly",
-    "icon": "fa-gamepad",
-    "tags": ["Tabletop game", "Game", "Monopoly", "Rogue-like"],
-    "demo": "https://github.com/AllanCerveaux/Roguopoly"
-  },
-  {
     "id": "maraichage",
     "name": "Maraichage",
     "description": "A website for vegetables producer",
@@ -25,15 +16,6 @@
     "icon": "fa-map-marker",
     "tags": ["Tourism", "Photo", "Interactive map"],
     "demo": "https://ldevernay.github.io/Office-Tourisme/"
-  },
-  {
-    "id": "ci",
-    "name": "Cyber Identity",
-    "description": "Learn about your identity online",
-    "link": "Poltergeistz/cyber-identity",
-    "icon": "fa-user-secret",
-    "tags": ["Serious game", "Cyber", "Personal data"],
-    "demo": "https://#"
   },
   {
     "id": "fpc",
