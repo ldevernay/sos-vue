@@ -2,7 +2,7 @@
   {
     "id": "maraichage",
     "name": "Maraichage",
-    "description": "A website for vegetables producer",
+    "description": "A sample website for a shop",
     "link": "JGuiraud/projet_siteMaraichage",
     "icon": "fa-shopping-basket",
     "tags": ["Vegetables", "Local markets"],
@@ -11,7 +11,7 @@
   {
     "id": "carte-ot",
     "name": "Carte Office de tourisme",
-    "description": "Discover Saint-Gaudens",
+    "description": "Discover this town",
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
     "tags": ["Tourism", "Photo", "Interactive map"],
@@ -20,7 +20,7 @@
   {
     "id": "fpc",
     "name": "Flappy-con",
-    "description": "Classic Flappy bird",   
+    "description": "Classic Flappy bird, playable with joy-cons",   
     "link": "Groutch/Flappy-con",
     "icon": "fa-dove",
     "tags": ["Flappy bird", "Joy-con", "Game", "Phaser"],
@@ -56,7 +56,7 @@
   {
     "id": "cocagne",
     "name": "Plateforme Cocagne",
-    "description": "A website to help people from Cocagne connect",
+    "description": "A website to connect people and share annonces ",
     "link": "Dilou89/cocagne_plateforme",
     "icon": "fas fa-list-ul",
     "tags": ["Share", "Connect", "Laravel", "Cocagne"],
