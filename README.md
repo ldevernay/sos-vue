@@ -8,7 +8,7 @@ To add your own project on SOS, just add it to src/projects.json and create a pu
 See CONTRIBUTING.md for more details.  
 Everyone is welcome as long as you're eager to let others contribute.   
 Be sure to have a complete readme.md on how to use your project.   
-Having some issues registered might be a good start for some contributors, as well as an informative contributing.md and a licence.   
+Having some issues registered might be a good start for some contributors, as well as an informative contributing.md and a licence. By default, we recommend the Apache License 2.0.   
 
 ## Online demo
 [Provided by Surge](https://simplonopensource.surge.sh)
