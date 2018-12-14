@@ -11,7 +11,7 @@
   {
     "id": "carte-ot",
     "name": "Carte Office de tourisme",
-    "description": "Discover this town",
+    "description": "An interactive map linked to a photo gallery",
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
     "tags": ["Tourism", "Photo", "Interactive map"],
@@ -25,15 +25,6 @@
     "icon": "fa-dove",
     "tags": ["Flappy bird", "Joy-con", "Game", "Phaser"],
     "demo": "https://groutch.github.io/Flappy-con/"
-  },
-  {
-    "id": "ppg",
-    "name": "Projet_pedago_5c",
-    "description": "Planter/manger/bouger en jeux",
-    "link": "marion1998/projet_pedago_5c",
-    "icon": "fa-users",
-    "tags": ["Game", "Children", "Learning", "Javascript", "JQuery "],
-    "demo": "https://manger-bouger-5c.herokuapp.com/"
   },
   {
     "id": "itt",
@@ -54,15 +45,6 @@
     "demo": "https://simplonopensource.surge.sh"
   },
   {
-    "id": "cocagne",
-    "name": "Plateforme Cocagne",
-    "description": "A website to connect people and share annonces ",
-    "link": "Dilou89/cocagne_plateforme",
-    "icon": "fas fa-list-ul",
-    "tags": ["Share", "Connect", "Laravel", "Cocagne"],
-    "demo": ""
-  },
-  {
     "id": "glossaire",
     "name": "Glossaire",
     "description": "A crowdsourced glossary of tech-related terms",
@@ -70,14 +52,5 @@
     "icon": "fas fa-atlas",
     "tags": ["Glossary", "Javascript", "NodeJS"],
     "demo": "https://simplon-glossary.herokuapp.com/"
-  },
-  {
-    "id": "skilltree",
-    "name": "Arbre de compétences",
-    "description": "Make your own online skill tree",
-    "link": "BlunT76/AdC",
-    "icon": "fas fa-tree",
-    "tags": ["Skill Tree", "Javascript", "NodeJS"],
-    "demo": "https://arbredescompetences.herokuapp.com/"
   }
 ]
