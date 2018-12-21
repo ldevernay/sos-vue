@@ -6,7 +6,8 @@
     "link": "JGuiraud/projet_siteMaraichage",
     "icon": "fa-shopping-basket",
     "tags": ["Vegetables", "Local markets"],
-    "demo": "http://lesjardinsderiton.herokuapp.com"
+    "demo": "http://lesjardinsderiton.herokuapp.com",
+    "wip": false
   },
   {
     "id": "carte-ot",
@@ -15,7 +16,8 @@
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
     "tags": ["Tourism", "Photo", "Interactive map"],
-    "demo": "https://ldevernay.github.io/Office-Tourisme/"
+    "demo": "https://ldevernay.github.io/Office-Tourisme/",
+    "wip": false
   },
   {
     "id": "fpc",
@@ -24,7 +26,8 @@
     "link": "Groutch/Flappy-con",
     "icon": "fa-dove",
     "tags": ["Flappy bird", "Joy-con", "Game", "Phaser"],
-    "demo": "https://groutch.github.io/Flappy-con/"
+    "demo": "https://groutch.github.io/Flappy-con/",
+    "wip": false
   },
   {
     "id": "itt",
@@ -33,7 +36,8 @@
     "link": "SDarmandieu/ITTpwa",
     "icon": "fa-briefcase-medical",
     "tags": ["Medicine","ITT"],
-    "demo": "https://ittpwa.herokuapp.com/"
+    "demo": "https://ittpwa.herokuapp.com/",
+    "wip": false
   },
   {
     "id": "sos",
@@ -42,7 +46,8 @@
     "link": "ldevernay/sos-vue",
     "icon": "fas fa-list-ul",
     "tags": ["OpenSource"],
-    "demo": "https://simplonopensource.surge.sh"
+    "demo": "https://simplonopensource.surge.sh",
+    "wip": false
   },
   {
     "id": "glossaire",
@@ -51,6 +56,7 @@
     "link": "Djohn12/Glossaire",
     "icon": "fas fa-atlas",
     "tags": ["Glossary", "Javascript", "NodeJS"],
-    "demo": "https://simplon-glossary.herokuapp.com/"
+    "demo": "https://simplon-glossary.herokuapp.com/",
+    "wip": true
   }
 ]
