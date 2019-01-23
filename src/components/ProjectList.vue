@@ -1,8 +1,7 @@
 <template>
 <section>
       <v-switch
-        :label="`production projets only (no WIP)`"
-        v-show="searchStatus"
+        :label="`Production projets only (no WIP)`"
         v-model="wip"
         @change="filter_by_name"
       ></v-switch>
