@@ -1,10 +1,17 @@
 <template>
 <section>
-      <v-switch
-        :label="`Production projets only (no WIP)`"
-        v-model="wip"
-        @change="filter_by_name"
-      ></v-switch>
+    <v-layout>
+        <v-card>
+            <v-card-title>
+                La plateforme Simplon Open Commons permet aux formateurs comme aux apprenants de poster des projets, aboutis ou en cours, individuels en ou en groupe, et de les partager avec l'ensemble de la communauté.
+            </v-card-title>
+        </v-card>
+    </v-layout>
+    <v-switch
+            :label="`Production projets only (no WIP)`"
+            v-model="wip"
+            @change="filter_by_name"
+    ></v-switch>
       <v-text-field
         hide-details
         single-line
