@@ -3,7 +3,7 @@
     <v-layout>
         <v-card>
             <v-card-title>
-                La plateforme Simplon Open Commons permet aux formateurs comme aux apprenants de poster des projets, aboutis ou en cours, individuels en ou en groupe, et de les partager avec l'ensemble de la communauté.
+                La plateforme Simplon Open Source permet aux formateurs comme aux apprenants de poster des projets, aboutis ou en cours, individuels en ou en groupe, et de les partager avec l'ensemble de la communauté.
             </v-card-title>
         </v-card>
     </v-layout>
