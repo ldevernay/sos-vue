@@ -58,5 +58,15 @@
     "tags": ["Glossary", "Javascript", "NodeJS"],
     "demo": "https://simplon-glossary.herokuapp.com/",
     "wip": true
+  },
+  {
+    "id": "exchange",
+    "name": "Simplon Exchange",
+    "description": "Un clone de stackoverflow pour les simploniens.",
+    "link": "simplon-roanne/exchange",
+    "icon": "fas fa-exchange-alt",
+    "tags": ["OpenSource", "Javascript", "PHP", "Laravel"],
+    "demo": "http://simplon-exchange.help",
+    "wip": false
   }
 ]
