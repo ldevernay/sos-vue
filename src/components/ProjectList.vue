@@ -1,28 +1,16 @@
 <template>
 <section>
-      <v-text-field
-        hide-details
-        single-line
-        v-show="searchStatus"
-        label="Javascript, Php"
-        autofocus
-        v-model="search_input"
-        @keyup="filter_by_name"
-      ></v-text-field>
-      <v-btn icon @click="toggleSearchBar">
-        <v-icon :class="searchStatus ? 'primary--text' : 'dark--text lighten-1'">fas fa-search</v-icon>
-      </v-btn>
-      <section :key="tag" v-for="tag in selected_tags">
-              <v-chip @click="remove_filter_tag(tag)"><v-icon>fas fa-times</v-icon>  {{ tag }}</v-chip>
-            </section>
+  <section :key="tag" v-for="tag in selected_tags">
+    <v-chip @click="remove_filter_tag(tag)"><v-icon>fas fa-times</v-icon>  {{ tag }}</v-chip>
+  </section>
 	<v-container grid-list-md>
 		<v-layout row wrap >
-			<v-flex :key="project.id" v-for="project in projects">
+			<v-flex :key="project.id" v-for="project in this.projects_list.projects">
         <v-card color="grey lighten-3">
           <v-card-title>
             <v-layout row>
               <v-flex xs1>
-                <v-icon x-large>{{project.icon}}</v-icon>
+              <v-icon x-large>{{project.icon}}</v-icon>
               </v-flex>
               <v-flex xs11 class="text-xs-right">
                 <h3>{{ project.name }}</h3>
@@ -60,30 +48,19 @@ import router from "../router";
 
 export default {
   props: {
-    projects_list: Object
+    projects_list: Object,
   },
   data() {
     return {
       init_projects: this.projects_list.projects,
       projects: this.projects_list.projects,
       github_data: null,
-      searchStatus: false,
-      search_input: null,
       selected_tags: []
     };
   },
   methods: {
-    toggleSearchBar() {
-      return !this.searchStatus
-        ? (this.searchStatus = true)
-        : (this.searchStatus = false);
-    },
     linkToProject(id) {
       router.push({ name: "project", params: { project_id: id } });
-    },
-    filter_by_name(){
-      this.projects = this.init_projects.filter(project => project.name.toUpperCase().indexOf(this.search_input.toUpperCase()) != -1);
-      this.selected_tags = [];
     },
     add_filter_tag(tag){
       if (this.selected_tags.indexOf(tag) == -1){
@@ -101,9 +78,7 @@ export default {
           selected_tag => project.tags.indexOf(selected_tag) != -1
         ) 
       });
-      this.search_input = "";
-      this.searchStatus = false;
-    }
+    },
   }
 };
 </script>
