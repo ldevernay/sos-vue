@@ -26,6 +26,10 @@
             </section>
             <v-spacer>
               </v-spacer>
+              <v-chip v-if=project.wip color="amber lighten-2">WIP</v-chip>
+              <v-chip v-if=!project.wip color="light-green accent-4">OK</v-chip>
+            <v-spacer>
+              </v-spacer>
             <v-btn-toggle>
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>

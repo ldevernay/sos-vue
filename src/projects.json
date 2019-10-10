@@ -1,57 +1,33 @@
 [
   {
-    "id": "roguopoly",
-    "name": "Roguopoly",
-    "description": "RoguoPoly is a multiplayer online board game, or the goal is to have the most homestead possible on the board and have the most money to win.",
-    "link": "AllanCerveaux/Roguopoly",
-    "icon": "fa-gamepad",
-    "tags": ["Tabletop game", "Game", "Monopoly", "Rogue-like"],
-    "demo": "https://github.com/AllanCerveaux/Roguopoly"
-  },
-  {
     "id": "maraichage",
     "name": "Maraichage",
-    "description": "A website for vegetables producer",
+    "description": "A sample website for a shop",
     "link": "JGuiraud/projet_siteMaraichage",
     "icon": "fa-shopping-basket",
     "tags": ["Vegetables", "Local markets"],
-    "demo": "http://lesjardinsderiton.herokuapp.com"
+    "demo": "http://lesjardinsderiton.herokuapp.com",
+    "wip": false
   },
   {
     "id": "carte-ot",
     "name": "Carte Office de tourisme",
-    "description": "Discover Saint-Gaudens",
+    "description": "An interactive map linked to a photo gallery",
     "link": "ddiez31/Office-Tourisme",
     "icon": "fa-map-marker",
     "tags": ["Tourism", "Photo", "Interactive map"],
-    "demo": "https://ldevernay.github.io/Office-Tourisme/"
-  },
-  {
-    "id": "ci",
-    "name": "Cyber Identity",
-    "description": "Learn about your identity online",
-    "link": "Poltergeistz/cyber-identity",
-    "icon": "fa-user-secret",
-    "tags": ["Serious game", "Cyber", "Personal data"],
-    "demo": "https://#"
+    "demo": "https://ldevernay.github.io/Office-Tourisme/",
+    "wip": false
   },
   {
     "id": "fpc",
     "name": "Flappy-con",
-    "description": "Classic Flappy bird",   
+    "description": "Classic Flappy bird, playable with joy-cons",   
     "link": "Groutch/Flappy-con",
     "icon": "fa-dove",
     "tags": ["Flappy bird", "Joy-con", "Game", "Phaser"],
-    "demo": "https://groutch.github.io/Flappy-con/"
-  },
-  {
-    "id": "ppg",
-    "name": "Projet_pedago_5c",
-    "description": "Planter/manger/bouger en jeux",
-    "link": "marion1998/projet_pedago_5c",
-    "icon": "fa-users",
-    "tags": ["Game", "Children", "Learning", "Javascript", "JQuery "],
-    "demo": "https://manger-bouger-5c.herokuapp.com/"
+    "demo": "https://groutch.github.io/Flappy-con/",
+    "wip": false
   },
   {
     "id": "itt",
@@ -60,7 +36,8 @@
     "link": "SDarmandieu/ITTpwa",
     "icon": "fa-briefcase-medical",
     "tags": ["Medicine","ITT"],
-    "demo": "https://ittpwa.herokuapp.com/"
+    "demo": "https://ittpwa.herokuapp.com/",
+    "wip": false
   },
   {
     "id": "sos",
@@ -69,15 +46,27 @@
     "link": "ldevernay/sos-vue",
     "icon": "fas fa-list-ul",
     "tags": ["OpenSource"],
-    "demo": "https://simplonopensource.surge.sh"
+    "demo": "https://simplonopensource.surge.sh",
+    "wip": false
   },
   {
-    "id": "cocagne",
-    "name": "Plateforme Cocagne",
-    "description": "A website to help people from Cocagne connect",
-    "link": "Dilou89/cocagne_plateforme",
-    "icon": "fas fa-list-ul",
-    "tags": ["Share", "Connect", "Laravel", "Cocagne"],
-    "demo": ""
+    "id": "glossaire",
+    "name": "Glossaire",
+    "description": "A crowdsourced glossary of tech-related terms",
+    "link": "Djohn12/Glossaire",
+    "icon": "fas fa-atlas",
+    "tags": ["Glossary", "Javascript", "NodeJS"],
+    "demo": "https://simplon-glossary.herokuapp.com/",
+    "wip": true
+  },
+  {
+    "id": "exchange",
+    "name": "Simplon Exchange",
+    "description": "Un clone de stackoverflow pour les simploniens.",
+    "link": "simplon-roanne/exchange",
+    "icon": "fas fa-exchange-alt",
+    "tags": ["OpenSource", "Javascript", "PHP", "Laravel"],
+    "demo": "http://simplon-exchange.help",
+    "wip": false
   }
 ]
