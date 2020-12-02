@@ -7,11 +7,11 @@
             </v-card-title>
         </v-card>
     </v-layout>
-    <v-switch
-            :label="`Production projets only (no WIP)`"
-            v-model="wip"
-            @change="filter_by_name"
-    ></v-switch>
+      <v-switch
+        :label="`Production projets only (no WIP)`"
+        v-model="wip"
+        @change="filter_by_name"
+      ></v-switch>
       <v-text-field
         hide-details
         single-line
@@ -58,8 +58,10 @@
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>
               </v-btn>
-              <v-btn :href="`https://github.com/${project.link}`">
-                <v-icon>fab fa-github</v-icon>
+              <v-btn :href="`${project.link}`">
+                <v-icon>
+                  fab fa-{{ project.link.startsWith('https://github')?'github':'gitlab' }}
+                </v-icon>
               </v-btn>
             </v-btn-toggle>
           </v-card-actions>
