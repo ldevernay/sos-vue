@@ -84,7 +84,7 @@
     "name": "Bot Discord Simplon",
     "description": "Un bot Discord pour générer des groupes aléatoirement, lister les absents, et peut-être d'autres choses encore...",
     "link": "https://gitlab.com/orelab/discord-bot-spl",
-    "icon": "fas fa-exchange-alt",
+    "icon": "fas fa-discord",
     "tags": ["Discord", "Javascript", "Bot", "Heroku"],
     "demo": "https://discord-bot-spl.herokuapp.com/",
     "wip": true
