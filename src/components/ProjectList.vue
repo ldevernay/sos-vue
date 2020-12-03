@@ -58,8 +58,10 @@
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>
               </v-btn>
-              <v-btn :href="`https://github.com/${project.link}`">
-                <v-icon>fab fa-github</v-icon>
+              <v-btn :href="`${project.link}`">
+                <v-icon>
+                  fab fa-{{ project.link.startsWith('https://github')?'github':'gitlab' }}
+                </v-icon>
               </v-btn>
             </v-btn-toggle>
           </v-card-actions>
