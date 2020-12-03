@@ -15,23 +15,23 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.3.1",
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.0.4",
-    "@vue/cli-plugin-unit-mocha": "^3.0.4",
-    "@vue/cli-service": "^3.11.0",
-    "@vue/eslint-config-prettier": "^3.0.4",
-    "@vue/test-utils": "^1.0.0-beta.20",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-plugin-unit-mocha": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "@vue/eslint-config-prettier": "^3.0.5",
+    "@vue/test-utils": "^1.1.1",
     "chai": "^4.1.2",
     "git-scripts": "^0.2.1",
-    "surge": "^0.21.3",
+    "surge": "^0.21.7",
     "vue-cli-plugin-vuetify": "^0.2.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.12"
   },
   "git": {
     "scripts": {
       "commit-msg": "npm run build",
-      "pre-push": "surge --project ./dist --domain simplonopensource.surge.sh"
+      "_pre-push": "surge --project ./dist --domain simplonopensource.surge.sh"
     }
   },
   "eslintConfig": {

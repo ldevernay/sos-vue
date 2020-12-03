@@ -1,8 +1,32 @@
 <template>
 <section>
-  <section :key="tag" v-for="tag in selected_tags">
-    <v-chip @click="remove_filter_tag(tag)"><v-icon>fas fa-times</v-icon>  {{ tag }}</v-chip>
-  </section>
+    <v-layout>
+        <v-card>
+            <v-card-title>
+                La plateforme Simplon Open Source permet aux formateurs comme aux apprenants de poster des projets, aboutis ou en cours, individuels en ou en groupe, et de les partager avec l'ensemble de la communauté.
+            </v-card-title>
+        </v-card>
+    </v-layout>
+      <v-switch
+        :label="`Production projets only (no WIP)`"
+        v-model="wip"
+        @change="filter_by_name"
+      ></v-switch>
+      <v-text-field
+        hide-details
+        single-line
+        v-show="searchStatus"
+        label="Javascript, Php"
+        autofocus
+        v-model="search_input"
+        @keyup="filter_by_name"
+      ></v-text-field>
+      <v-btn icon @click="toggleSearchBar">
+        <v-icon :class="searchStatus ? 'primary--text' : 'dark--text lighten-1'">fas fa-search</v-icon>
+      </v-btn>
+      <section :key="tag" v-for="tag in selected_tags">
+              <v-chip @click="remove_filter_tag(tag)"><v-icon>fas fa-times</v-icon>  {{ tag }}</v-chip>
+            </section>
 	<v-container grid-list-md>
 		<v-layout row wrap >
 			<v-flex :key="project.id" v-for="project in this.projects_list.projects">
@@ -34,8 +58,10 @@
               <v-btn :href="project.demo">
                 <v-icon>fas fa-globe</v-icon>
               </v-btn>
-              <v-btn :href="`https://github.com/${project.link}`">
-                <v-icon>fab fa-github</v-icon>
+              <v-btn :href="`${project.link}`">
+                <v-icon>
+                  fab fa-{{ project.link.startsWith('https://github')?'github':'gitlab' }}
+                </v-icon>
               </v-btn>
             </v-btn-toggle>
           </v-card-actions>
