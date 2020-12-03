@@ -72,11 +72,21 @@
   {
     "id": "gitlabapi",
     "name": "Gitlab API Viewer",
-    "description": "A webclient for Gitlab API to visualize what's happening in  a group. It is useful to manage a Simplon training class, or to give an example of how you can interact with an API in React, as a demo ;)",
+    "description": "A webclient for Gitlab API to visualize what's happening in  a group. It is useful to manage a Simplon training class, or , or to give an example of how you can interact with an API in React, as a demo ;)",
     "link": "https://gitlab.com/orelab/gitlab-api",
     "icon": "fab fa-gitlab",
     "tags": ["Javascript", "React", "Gitlab", "API"],
     "demo": "https://orelab.gitlab.io/gitlab-api/",
     "wip": false
+  },
+  {
+    "id": "discord-bot-spl",
+    "name": "Bot Discord Simplon",
+    "description": "Un bot Discord pour générer des groupes aléatoirement, lister les absents, et peut-être d'autres choses encore...",
+    "link": "https://gitlab.com/orelab/discord-bot-spl",
+    "icon": "fas fa-discord",
+    "tags": ["Discord", "Javascript", "Bot", "Heroku"],
+    "demo": "https://discord-bot-spl.herokuapp.com/",
+    "wip": true
   }
 ]

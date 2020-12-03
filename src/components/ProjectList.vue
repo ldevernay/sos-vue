@@ -7,11 +7,11 @@
             </v-card-title>
         </v-card>
     </v-layout>
-    <v-switch
-            :label="`Production projets only (no WIP)`"
-            v-model="wip"
-            @change="filter_by_name"
-    ></v-switch>
+      <v-switch
+        :label="`Production projets only (no WIP)`"
+        v-model="wip"
+        @change="filter_by_name"
+      ></v-switch>
       <v-text-field
         hide-details
         single-line
